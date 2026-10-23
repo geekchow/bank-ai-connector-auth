@@ -1,0 +1,43 @@
+{
+  "issuer": "https://auth.examplebank.hk",
+  "authorization_endpoint": "https://auth.examplebank.hk/authorize",
+  "token_endpoint": "https://auth.examplebank.hk/token",
+  "pushed_authorization_request_endpoint": "https://auth.examplebank.hk/par",
+  "revocation_endpoint": "https://auth.examplebank.hk/revoke",
+  "introspection_endpoint": "https://auth.examplebank.hk/introspect",
+  "jwks_uri": "https://auth.examplebank.hk/jwks",
+  "backchannel_authentication_endpoint": "https://auth.examplebank.hk/bc-authorize",
+
+  "response_types_supported": ["code"],
+  "response_modes_supported": ["query"],
+  "grant_types_supported": [
+    "authorization_code",
+    "refresh_token",
+    "urn:openid:params:grant-type:ciba",
+    "urn:ietf:params:oauth:grant-type:jwt-bearer"
+  ],
+  "code_challenge_methods_supported": ["S256"],
+  "authorization_response_iss_parameter_supported": true,
+
+  "client_id_metadata_document_supported": true,
+  "token_endpoint_auth_methods_supported": ["none", "private_key_jwt", "tls_client_auth"],
+  "token_endpoint_auth_signing_alg_values_supported": ["PS256", "ES256"],
+
+  "scopes_supported": [
+    "accounts:read",
+    "transactions:read",
+    "cards:read",
+    "alerts:write",
+    "budgets:write",
+    "cards:freeze",
+    "payments:draft",
+    "offline_access"
+  ],
+  "authorization_details_types_supported": ["https://examplebank.hk/rar/payment-draft/v1"],
+
+  "dpop_signing_alg_values_supported": ["ES256", "PS256"],
+  "tls_client_certificate_bound_access_tokens": true,
+
+  "backchannel_token_delivery_modes_supported": ["poll"],
+  "backchannel_user_code_parameter_supported": false
+}

@@ -26,6 +26,8 @@
 | 11 | [治理与合规：审计、风控联动与香港监管要求](articles/11-governance-audit-compliance.md) |
 | 12 | [落地篇：参考架构、骨架代码与上线检查清单](articles/12-implementation-reference-architecture.md) |
 
+在线阅读：<https://geekchow.github.io/bank-ai-connector-auth/>（由 GitHub Actions 从本仓库的 Markdown 自动构建）。
+
 完整大纲见 [OUTLINE.md](OUTLINE.md)，规范版本基线见 [REFERENCES.md](REFERENCES.md)。
 
 ## 示例代码

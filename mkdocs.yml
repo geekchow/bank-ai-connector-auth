@@ -1,0 +1,96 @@
+site_name: 让 AI 替你办银行业务
+site_description: 面向 MCP Connector 的身份认证与授权设计——银行向 AI 助手开放能力的系列技术文章
+site_url: https://geekchow.github.io/bank-ai-connector-auth/
+repo_url: https://github.com/geekchow/bank-ai-connector-auth
+repo_name: geekchow/bank-ai-connector-auth
+edit_uri: edit/main/articles/
+copyright: 文章 CC BY 4.0 · 代码 Apache-2.0 · 示例银行为虚构案例，内容不构成法律或合规意见
+
+# 文章以 articles/ 下的 Markdown 为唯一来源；首页、大纲、参考资料由 hooks 从根目录文件生成
+docs_dir: articles
+hooks:
+  - mkdocs_hooks.py
+
+nav:
+  - 首页: index.md
+  - 系列大纲: outline.md
+  - 一、全景与场景:
+      - 01 全景篇：从 IBKR Connector 看起: 01-landscape-ibkr-connector.md
+      - 02 场景篇：按风险分级: 02-scenarios-risk-tiers.md
+  - 二、身份认证:
+      - 03 MCP 授权规范逐条拆解: 03-authn-mcp-authorization-spec.md
+      - 04 身份绑定与 SCA: 04-authn-identity-binding-sca.md
+  - 三、授权:
+      - 05 scope 与 RAR: 05-authz-scopes-and-rar.md
+      - 06 受众绑定与混淆代理: 06-authz-audience-passthrough-confused-deputy.md
+      - 07 持有者约束与 FAPI 2.0: 07-authz-sender-constrained-fapi2.md
+      - 08 生命周期、撤销与授权管理中心: 08-authz-lifecycle-revocation-consent-center.md
+      - 09 AI 起草，用户签核: 09-authz-draft-and-human-approval.md
+  - 四、风险、治理与落地:
+      - 10 AI 特有风险: 10-ai-specific-risks.md
+      - 11 治理与合规: 11-governance-audit-compliance.md
+      - 12 落地篇: 12-implementation-reference-architecture.md
+  - 规范与资料基线: references.md
+
+theme:
+  name: material
+  language: zh
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.footer
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+extra_css:
+  - assets/extra.css
+
+plugins:
+  - search:
+      lang: [zh, en]
+      separator: '[\s​\-_,:!=\[\]()"`/，。、；：？！（）「」]+'
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+exclude_docs: |
+  /assets/*.md

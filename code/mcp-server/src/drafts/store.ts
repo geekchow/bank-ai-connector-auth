@@ -1,11 +1,11 @@
 // 支付草稿（第 9 篇）。草稿是 AI 能触达的最远位置；执行只在用户于银行侧签核后发生。
 //
-// 状态机：created → pending_approval → approved → executed
+// 状态机：created → pending_approval → approved → executed / failed
 //                                   ↘ rejected / expired / cancelled
 
 import { randomBytes } from 'node:crypto';
 
-export type DraftStatus = 'pending_approval' | 'approved' | 'executed' | 'rejected' | 'expired' | 'cancelled';
+export type DraftStatus = 'pending_approval' | 'approved' | 'executed' | 'failed' | 'rejected' | 'expired' | 'cancelled';
 
 export interface PaymentDraft {
   draft_id: string;

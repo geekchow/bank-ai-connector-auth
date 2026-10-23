@@ -11,22 +11,29 @@
 
 ## 目录
 
-| # | 标题 | 状态 |
-|---|---|---|
-| 1 | [全景篇：从 IBKR Connector 看「AI 代理访问金融账户」](articles/01-landscape-ibkr-connector.md) | ✅ 已发布 |
-| 2 | 场景篇：按风险分级，哪些可以交给 AI | ⏳ |
-| 3 | AuthN（上）：MCP 授权规范逐条拆解（2026-07-28） | ⏳ |
-| 4 | AuthN（下）：绑定银行现有身份体系，SCA 放在哪一步 | ⏳ |
-| 5 | AuthZ（一）：权限模型——从 scope 到 Rich Authorization Requests | ⏳ |
-| 6 | AuthZ（二）：受众绑定——token passthrough 与混淆代理 | ⏳ |
-| 7 | AuthZ（三）：持有者约束与 FAPI 2.0 差距分析 | ⏳ |
-| 8 | AuthZ（四）：token 生命周期、撤销与用户授权管理中心 | ⏳ |
-| 9 | AuthZ（五）：高风险操作的「AI 起草，用户签核」 | ⏳ |
-| 10 | AI 特有风险：prompt injection、工具投毒与「AI 说的≠用户同意的」 | ⏳ |
-| 11 | 治理与合规：审计、风控联动与香港监管要求 | ⏳ |
-| 12 | 落地篇：参考架构、骨架代码与上线检查清单 | ⏳ |
+| # | 标题 |
+|---|---|
+| 1 | [全景篇：从 IBKR Connector 看「AI 代理访问金融账户」](articles/01-landscape-ibkr-connector.md) |
+| 2 | [场景篇：按风险分级，哪些可以交给 AI](articles/02-scenarios-risk-tiers.md) |
+| 3 | [AuthN（上）：MCP 授权规范逐条拆解（2026-07-28）](articles/03-authn-mcp-authorization-spec.md) |
+| 4 | [AuthN（下）：绑定银行现有身份体系，SCA 放在哪一步](articles/04-authn-identity-binding-sca.md) |
+| 5 | [AuthZ（一）：权限模型——从 scope 到 Rich Authorization Requests](articles/05-authz-scopes-and-rar.md) |
+| 6 | [AuthZ（二）：受众绑定——token passthrough 与混淆代理](articles/06-authz-audience-passthrough-confused-deputy.md) |
+| 7 | [AuthZ（三）：持有者约束与 FAPI 2.0 差距分析](articles/07-authz-sender-constrained-fapi2.md) |
+| 8 | [AuthZ（四）：token 生命周期、撤销与用户授权管理中心](articles/08-authz-lifecycle-revocation-consent-center.md) |
+| 9 | [AuthZ（五）：高风险操作的「AI 起草，用户签核」](articles/09-authz-draft-and-human-approval.md) |
+| 10 | [AI 特有风险：prompt injection、工具投毒与「AI 说的≠用户同意的」](articles/10-ai-specific-risks.md) |
+| 11 | [治理与合规：审计、风控联动与香港监管要求](articles/11-governance-audit-compliance.md) |
+| 12 | [落地篇：参考架构、骨架代码与上线检查清单](articles/12-implementation-reference-architecture.md) |
 
 完整大纲见 [OUTLINE.md](OUTLINE.md)，规范版本基线见 [REFERENCES.md](REFERENCES.md)。
+
+## 示例代码
+
+[`code/`](code/) 目录包含配合文章的骨架实现（仅用于说明设计）：
+
+- `code/mcp-server/`：TypeScript MCP server（`@modelcontextprotocol/server` 2.3.1，MCP `2026-07-28`），已通过类型检查与本地端到端冒烟测试；
+- `code/authz-server/`：Python 授权服务器策略组件（CIMD 允许名单、RAR 收紧与同意文案、token 生命周期）及单元测试。
 
 ## 写作约定
 

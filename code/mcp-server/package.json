@@ -2,6 +2,7 @@
   "name": "examplebank-hk-mcp-server",
   "version": "0.1.0",
   "private": true,
+  "license": "Apache-2.0",
   "description": "示例银行（香港）MCP server 骨架：OAuth 资源服务器 + 只读工具 + 支付草稿与银行侧签核",
   "type": "module",
   "engines": { "node": ">=20" },

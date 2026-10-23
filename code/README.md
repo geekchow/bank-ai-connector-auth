@@ -33,3 +33,7 @@ python3 -m unittest -v test_authz
 ```
 
 对应文章见仓库根目录 [README](../README.md)。
+
+## 许可证
+
+本目录下的代码采用 [Apache License 2.0](LICENSE)。

@@ -1,0 +1,18 @@
+本仓库采用双许可证 / This repository is dual-licensed:
+
+1. 文章与文档 / Articles and documentation
+   articles/、README.md、OUTLINE.md、REFERENCES.md 及 code/ 之外的其他内容，
+   采用 Creative Commons Attribution 4.0 International（CC BY 4.0）许可。
+   全文见 LICENSE-CC-BY-4.0.txt，或 https://creativecommons.org/licenses/by/4.0/
+
+   Everything outside the code/ directory (including articles/, README.md,
+   OUTLINE.md and REFERENCES.md) is licensed under CC BY 4.0.
+
+2. 示例代码 / Example code
+   code/ 目录下的全部内容采用 Apache License 2.0 许可。
+   全文见 code/LICENSE，或 https://www.apache.org/licenses/LICENSE-2.0
+
+   Everything under the code/ directory is licensed under the Apache License,
+   Version 2.0.
+
+Copyright (c) 2026 geekchow

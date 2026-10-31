@@ -1,0 +1,19 @@
+{
+  "articles": {
+    "note": "CSDN publish record for this series (column: 银行 AI Connector 认证与授权). 'src' is repo-root-relative.",
+    "01-landscape-ibkr-connector.md": {
+      "src": "articles/01-landscape-ibkr-connector.md",
+      "articleId": "169642801",
+      "url": "https://blog.csdn.net/PhilZhou/article/details/169642801",
+      "title": "第 1 篇｜全景篇：从 IBKR Connector 看「AI 代理访问金融账户」",
+      "published": "2026-10-31"
+    },
+    "02-scenarios-risk-tiers.md": {
+      "src": "articles/02-scenarios-risk-tiers.md",
+      "articleId": "169642978",
+      "url": "https://blog.csdn.net/PhilZhou/article/details/169642978",
+      "title": "第 2 篇｜场景篇：按风险分级，哪些可以交给 AI",
+      "published": "2026-10-31"
+    }
+  }
+}

@@ -14,6 +14,20 @@
       "url": "https://blog.csdn.net/PhilZhou/article/details/169642978",
       "title": "第 2 篇｜场景篇：按风险分级，哪些可以交给 AI",
       "published": "2026-10-31"
+    },
+    "03-authn-mcp-authorization-spec.md": {
+      "src": "articles/03-authn-mcp-authorization-spec.md",
+      "articleId": "169725640",
+      "url": "https://blog.csdn.net/PhilZhou/article/details/169725640",
+      "title": "第 3 篇｜AuthN（上）：MCP 授权规范逐条拆解（2026-07-28）",
+      "published": "2026-11-01"
+    },
+    "04-authn-identity-binding-sca.md": {
+      "src": "articles/04-authn-identity-binding-sca.md",
+      "articleId": "169725995",
+      "url": "https://blog.csdn.net/PhilZhou/article/details/169725995",
+      "title": "第 4 篇｜AuthN（下）：绑定银行现有身份体系，SCA 放在哪一步",
+      "published": "2026-11-01"
     }
   }
 }

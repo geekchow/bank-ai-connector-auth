@@ -28,6 +28,20 @@
       "url": "https://blog.csdn.net/PhilZhou/article/details/169725995",
       "title": "第 4 篇｜AuthN（下）：绑定银行现有身份体系，SCA 放在哪一步",
       "published": "2026-11-01"
+    },
+    "05-authz-scopes-and-rar.md": {
+      "src": "articles/05-authz-scopes-and-rar.md",
+      "articleId": "169808512",
+      "url": "https://blog.csdn.net/PhilZhou/article/details/169808512",
+      "title": "第 5 篇｜AuthZ（一）：权限模型——从 scope 到 Rich Authorization Requests",
+      "published": "2026-11-02"
+    },
+    "06-authz-audience-passthrough-confused-deputy.md": {
+      "src": "articles/06-authz-audience-passthrough-confused-deputy.md",
+      "articleId": "169809357",
+      "url": "https://blog.csdn.net/PhilZhou/article/details/169809357",
+      "title": "第 6 篇｜AuthZ（二）：受众绑定——token passthrough 与混淆代理",
+      "published": "2026-11-02"
     }
   }
 }

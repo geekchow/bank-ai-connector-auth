@@ -42,6 +42,20 @@
       "url": "https://blog.csdn.net/PhilZhou/article/details/169809357",
       "title": "第 6 篇｜AuthZ（二）：受众绑定——token passthrough 与混淆代理",
       "published": "2026-11-02"
+    },
+    "07-authz-sender-constrained-fapi2.md": {
+      "src": "articles/07-authz-sender-constrained-fapi2.md",
+      "articleId": "169934879",
+      "url": "https://blog.csdn.net/PhilZhou/article/details/169934879",
+      "title": "第 7 篇｜AuthZ（三）：持有者约束与 FAPI 2.0 差距分析",
+      "published": "2026-11-03"
+    },
+    "08-authz-lifecycle-revocation-consent-center.md": {
+      "src": "articles/08-authz-lifecycle-revocation-consent-center.md",
+      "articleId": "169935112",
+      "url": "https://blog.csdn.net/PhilZhou/article/details/169935112",
+      "title": "第 8 篇｜AuthZ（四）：token 生命周期、撤销与用户授权管理中心",
+      "published": "2026-11-03"
     }
   }
 }

@@ -56,6 +56,20 @@
       "url": "https://blog.csdn.net/PhilZhou/article/details/169935112",
       "title": "第 8 篇｜AuthZ（四）：token 生命周期、撤销与用户授权管理中心",
       "published": "2026-11-03"
+    },
+    "09-authz-draft-and-human-approval.md": {
+      "src": "articles/09-authz-draft-and-human-approval.md",
+      "articleId": "170026405",
+      "url": "https://blog.csdn.net/PhilZhou/article/details/170026405",
+      "title": "第 9 篇｜AuthZ（五）：高风险操作的「AI 起草，用户签核」",
+      "published": "2026-11-04"
+    },
+    "10-ai-specific-risks.md": {
+      "src": "articles/10-ai-specific-risks.md",
+      "articleId": "170034757",
+      "url": "https://blog.csdn.net/PhilZhou/article/details/170034757",
+      "title": "第 10 篇｜AI 特有风险：prompt injection、工具投毒与「AI 说的≠用户同意的」",
+      "published": "2026-11-04"
     }
   }
 }
